@@ -1,0 +1,150 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3086563985" file="C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations.prj" location="C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb" name="GetPVCLocations" preferred-package-location="C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.library" target-name="MATLAB Compiler for Libraries and Classes">
+    <param.appname>GetPVCLocations</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\GetPVCLocations\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\GetPVCLocations\for_testing</param.intermediate>
+    <param.output>${PROJECT_ROOT}\GetPVCLocations\for_redistribution</param.output>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.server.ctf>${PROJECT_ROOT}\GetPVCLocations\for_testing\GetPVCLocations.ctf</param.server.ctf>
+    <param.server.readme>${PROJECT_ROOT}\GetPVCLocations\for_testing\readme.txt</param.server.readme>
+    <param.target.type>subtarget.net.component</param.target.type>
+    <param.support.packages />
+    <param.namespace>GetPVCLocations</param.namespace>
+    <param.classorg />
+    <param.function.data />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.net.framework>option.net.framework.default</param.net.framework>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace>GetPVCLocations</param.net.tsa.namespace>
+    <param.net.tsa.superclass>PVC</param.net.tsa.superclass>
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>C:\Windows</param.net.tsa.metadata.assembly>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.output />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.server.ctf />
+      <param.server.readme />
+      <param.support.packages />
+      <param.namespace />
+      <param.classorg />
+      <param.function.data />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.user.only.registration />
+      <param.net.framework />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.enable.remoting />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+    </unset>
+    <fileset.exports>
+      <file>${PROJECT_ROOT}\GetPVCLocations.m</file>
+    </fileset.exports>
+    <fileset.classes>
+      <entity.package name="">
+        <entity.class name="PVC">
+          <file>${PROJECT_ROOT}\GetPVCLocations.m</file>
+        </entity.class>
+      </entity.package>
+    </fileset.classes>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\fv.mat</file>
+      <file>${PROJECT_ROOT}\labels.mat</file>
+      <file>${PROJECT_ROOT}\network.mat</file>
+      <file>${PROJECT_ROOT}\NeuralNetworkFunction.m</file>
+      <file>${PROJECT_ROOT}\pantompkins_qrs.m</file>
+      <file>${PROJECT_ROOT}\readTextFile.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\GetPVCLocations\for_testing" name="GetPVCLocationsNative.dll" optional="false">C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations\for_testing\GetPVCLocationsNative.dll</file>
+      <file location="${PROJECT_ROOT}\GetPVCLocations\for_testing" name="GetPVCLocations.dll" optional="false">C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations\for_testing\GetPVCLocations.dll</file>
+      <file location="${PROJECT_ROOT}\GetPVCLocations\for_testing" name="readme.txt" optional="true">C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\GetPVCLocations\for_testing" name="GetPVCLocations_overview.html" optional="false">C:\Users\G.e.O.r.G.e.S\Desktop\wfdbdemo\mitdb\GetPVCLocations\for_testing\GetPVCLocations_overview.html</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2014a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

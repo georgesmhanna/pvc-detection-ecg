@@ -1,0 +1,190 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+      rel="stylesheet" />
+<link href="~/Content/font-awesome.css" rel="stylesheet"/>
+
+<link href="~/Content/font-awesome.css" rel="stylesheet" /><div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+
+
+<div class="container">
+    <h1>Automatic PVC Detector</h1>
+    <hr class="soften"/>
+
+    <div class="row">
+        
+        <div class="span6">
+            <h4>Upload ECG Files here:</h4>
+            <div class="alert" flow-drop flow-drag-enter="class='alert-success'" flow-drag-leave="class=''"
+                 ng-class="class">
+
+
+                <span class="btn" flow-btn><i class="icon icon-file"></i>Upload File</span>
+                <span class="btn" flow-btn flow-directory ng-show="$flow.supportDirectory">
+                        <i class="icon icon-folder-open"></i>
+                        Upload Folder
+                    </span>
+                    
+                OR Drag And Drop your files here
+            </div>
+        </div>
+    </div>
+    <hr class="soften">
+    <form>
+        <div class="form-group">
+
+            <label class="control-label">Enter Sampling Frequency</label>
+
+            <input type="number" ng-model="fs" min="1" value="" class="form-control input-lg"/>
+
+        </div>
+    </form>
+    <hr class="soften">
+
+    <div >
+        <h2>Transfers:</h2>
+
+        <p>
+            @*<a class="btn btn-small btn-success" ng-click="$flow.resume()">Upload</a>
+                <a class="btn btn-small btn-danger" ng-click="$flow.pause()">Pause</a>
+                <a class="btn btn-small btn-info" ng-click="$flow.cancel()">Cancel</a>*@
+            <span class="label label-info">Total File Size: {{$flow.getSize()}}</span>
+            @*<span class="label label-info">Is Uploading: {{$flow.isUploading()}}</span>*@
+        </p>
+        <table class="table table-hover" flow-transfers>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Relative Path</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr ng-hide="uploader.flow.files.length>0">
+                <td><strong>Please select your files to show them here</strong></td>  
+            </tr> 
+            
+            <tr ng-repeat="file in transfers">
+
+                <td>{{$index+1}}</td>
+                <td>{{file.name}}</td>
+                <td>{{file.size}}</td>
+                <td>{{file.relativePath}}</td>
+                <td>
+                    <a class="btn btn-mini btn-danger" ng-click="file.cancel()">
+                        Cancel
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul class="flow-list"></ul>
+
+        <hr class="soften" />
+    </div>
+    <button ng-click="clickMe()" class="btn btn-success col-md-offset-6" ng-disabled="!uploader.flow.files.length>0 || !fs">Get PVC Locations</button>
+    <i class="fa fa-spinner fa-pulse fa-2x fa-fw" ng-show="loading"></i>
+    <span class="sr-only">Loading...</span>
+    <h2>Results:</h2>
+
+    <hr class="soften"/>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>PVC Indices</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="result in results">
+                <td>{{result.FileName}}</td>
+                <td>{{result.PvcLocations}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+
+
+
+<script type="text/javascript">
+
+    var app = angular.module('myApp', ['flow'])
+.config(['flowFactoryProvider', function (flowFactoryProvider) {
+    flowFactoryProvider.defaults = {
+       // target: 'upload.php',
+        permanentErrors: [404, 500, 501],
+        maxChunkRetries: 1,
+        chunkRetryInterval: 5000,
+        simultaneousUploads: 4
+    };
+    flowFactoryProvider.on('catchAll', function (event) {
+        console.log('catchAll', arguments);
+    });
+    // Can be used with different implementations of Flow.js
+    // flowFactoryProvider.factory = fustyFlowFactory;
+}]);
+
+    app.controller("myCtrl", function ($scope, $http) {
+        $scope.loading = false;
+        $scope.uploader = {};
+        $scope.uploadedFiles = [];
+        $scope.clickMe = function () {
+            console.log($scope.uploader.flow.files);
+            $scope.uploadedFiles = [];
+            $scope.uploader.flow.files.forEach(function(element) {
+                $scope.uploadedFiles.push(element.file);
+            });
+            console.log($scope.uploadedFiles);
+            $scope.loading = true;
+
+            $http({
+                url: "/Home/Upload",
+                method: "POST",
+                headers: { "Content-Type": undefined },
+                transformRequest: function(data) {
+                    var formData = new FormData();
+                    formData.append("fs", data.fs);
+                    for (var i = 0; i < data.files.length; i++) {
+                        formData.append("files[" + i + "]", data.files[i]);
+                    }
+                    return formData;
+
+                },
+                data: { files: $scope.uploadedFiles, fs:$scope.fs }
+            }).then(function (response) {
+                $scope.loading = false;
+
+                $scope.uploadedFiles = [];
+                if (response.status === 200) {
+                    $.notify("File Upload Complete", "success");
+                    $scope.results = response.data;
+                } else {
+                    $.notify("Error processing files!", "error");
+
+                }
+            }).catch(function () {
+                $scope.loading = false;
+
+                $.notify("Error processing files!", "error");
+
+            });
+
+
+            //$http.post('/Home/Upload', { files: $scope.uploadedFiles }).then(function(response) {
+            //    console.log(response);
+            //});
+            //$http.post('/Home/Upload')
+        }
+    //});
+
+    });
+
+</script>
+

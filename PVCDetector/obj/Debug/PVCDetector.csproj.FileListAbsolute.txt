@@ -1,0 +1,33 @@
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\PVCDetector.dll.config
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\PVCDetector.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\PVCDetector.pdb
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\Antlr3.Runtime.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\Newtonsoft.Json.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Helpers.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Mvc.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Optimization.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Razor.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.Deployment.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.Razor.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\WebGrease.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Helpers.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Mvc.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Optimization.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.Razor.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.Deployment.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\System.Web.WebPages.Razor.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\Antlr3.Runtime.pdb
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\bin\Newtonsoft.Json.xml
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\obj\Debug\PVCDetector.csprojResolveAssemblyReference.cache
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\obj\Debug\PVCDetector.dll
+C:\Users\G.e.O.r.G.e.S\Documents\Visual Studio 2013\Projects\PVCDetector\PVCDetector\obj\Debug\PVCDetector.pdb
+C:\Users\G.e.O.r.G.e.S\documents\visual studio 2013\Projects\PVCDetector\PVCDetector\bin\TestQRS.dll
+C:\Users\G.e.O.r.G.e.S\documents\visual studio 2013\Projects\PVCDetector\PVCDetector\bin\TestQRS.xml
+C:\Users\G.e.O.r.G.e.S\documents\visual studio 2013\Projects\PVCDetector\PVCDetector\bin\GetPVCLocations.dll
+C:\Users\G.e.O.r.G.e.S\documents\visual studio 2013\Projects\PVCDetector\PVCDetector\bin\GetPVCLocations.xml
+C:\Users\gmhanna\Downloads\Compressed\PVCDetector\PVCDetector\PVCDetector\obj\Debug\PVCDetector.csprojResolveAssemblyReference.cache
+C:\Users\gmhanna\Downloads\Compressed\PVCDetector\PVCDetector\PVCDetector\obj\Debug\PVCDetector.dll
+C:\Users\gmhanna\Downloads\Compressed\PVCDetector\PVCDetector\PVCDetector\obj\Debug\PVCDetector.pdb
